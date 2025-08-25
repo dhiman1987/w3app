@@ -1,0 +1,7 @@
+spring:
+  application:
+     name: w3app
+  data:
+    mongodb:
+      uri: mongodb://appuser:app-123@localhost:27017/eventsdb?authSource=eventsdb
+

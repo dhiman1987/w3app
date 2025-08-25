@@ -1,0 +1,68 @@
+# Java build artifacts
+target/
+bin/
+*.class
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# MongoDb
+data/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Logs
+*.log
+logs/
+*.out
+
+# Environment files
+.env
+*.env
+
+# Spring Boot specific
+*.jar
+*.war
+*.ear
+
+# Test reports
+test-output/
+surefire-reports/
+jacoco.exec
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# Others
+node_modules/
+npm-debug.log
+yarn-error.log
+

@@ -1,0 +1,13 @@
+package com.dhiman.w3app.model;
+
+public enum EventType {
+    WAR_CONFLICT,
+    EMPIRE_DYNASTY,
+    ERA_PERIOD,
+    POLITICAL_EVENT,
+    DISCOVERY_INVENTION,
+    FAMOUS_PERSON,
+    CULTURAL_EVENT,
+    NATURAL_DISASTER,
+    ECONOMIC_EVENT
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "title": "Cambrian Explosion",
+    "description": "A period of rapid diversification of life forms on Earth.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 541, "era": "MYA" },
+    "end": { "value": 485, "era": "MYA" }
+  },
+  {
+    "title": "Formation of the Solar System",
+    "description": "The Sun and planets formed from a giant molecular cloud.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 4600, "era": "MYA" },
+    "end": { "value": 4600, "era": "MYA" }
+  },
+  {
+    "title": "First Multicellular Life",
+    "description": "Emergence of organisms composed of multiple cells.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 1200, "era": "MYA" },
+    "end": { "value": 1200, "era": "MYA" }
+  },
+  {
+    "title": "Age of Dinosaurs",
+    "description": "The Mesozoic Era dominated by dinosaurs.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 252, "era": "MYA" },
+    "end": { "value": 66, "era": "MYA" }
+  },
+  {
+    "title": "Ice Age",
+    "description": "A period of long-term reduction in Earth's temperature.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 2600000, "era": "BCE" },
+    "end": { "value": 11700, "era": "BCE" }
+  },
+  {
+    "title": "Neolithic Revolution",
+    "description": "Transition from nomadic hunting to agriculture.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 10000, "era": "BCE" },
+    "end": { "value": 3000, "era": "BCE" }
+  },
+  {
+    "title": "Bronze Age",
+    "description": "Period characterized by the use of bronze tools and weapons.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 3300, "era": "BCE" },
+    "end": { "value": 1200, "era": "BCE" }
+  },
+  {
+    "title": "Iron Age",
+    "description": "Period marked by widespread use of iron.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 1200, "era": "BCE" },
+    "end": { "value": 600, "era": "CE" }
+  },
+  {
+    "title": "Middle Ages",
+    "description": "Period in European history from the fall of Rome to the Renaissance.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 476, "era": "CE" },
+    "end": { "value": 1453, "era": "CE" }
+  },
+  {
+    "title": "Modern Era",
+    "description": "Period from the Renaissance to the present.",
+    "eventType": "ERA_PERIOD",
+    "start": { "value": 1500, "era": "CE" },
+    "end": { "value": 2025, "era": "CE" }
+  },
+  {
+    "title": "Construction of the Great Pyramid of Giza",
+    "description": "Built during the reign of Pharaoh Khufu, one of the Seven Wonders of the Ancient World.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 2580, "era": "BCE" },
+    "end": { "value": 2560, "era": "BCE" }
+  },
+  {
+    "title": "Akkadian Empire",
+    "description": "First ancient empire of Mesopotamia.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 2334, "era": "BCE" },
+    "end": { "value": 2154, "era": "BCE" }
+  },
+  {
+    "title": "Roman Empire",
+    "description": "One of the largest empires in history, centered in Rome.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 27, "era": "BCE" },
+    "end": { "value": 476, "era": "CE" }
+  },
+  {
+    "title": "Byzantine Empire",
+    "description": "Eastern continuation of the Roman Empire.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 330, "era": "CE" },
+    "end": { "value": 1453, "era": "CE" }
+  },
+  {
+    "title": "Mongol Empire",
+    "description": "Largest contiguous empire in history.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1206, "era": "CE" },
+    "end": { "value": 1368, "era": "CE" }
+  },
+  {
+    "title": "Ottoman Empire",
+    "description": "Empire that spanned Southeast Europe, Western Asia, and North Africa.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1299, "era": "CE" },
+    "end": { "value": 1922, "era": "CE" }
+  },
+  {
+    "title": "British Empire",
+    "description": "The largest empire in history by land area.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1583, "era": "CE" },
+    "end": { "value": 1997, "era": "CE" }
+  },
+  {
+    "title": "Qing Dynasty",
+    "description": "The last imperial dynasty of China.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1644, "era": "CE" },
+    "end": { "value": 1912, "era": "CE" }
+  },
+  {
+    "title": "Mughal Empire",
+    "description": "An empire in the Indian subcontinent.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1526, "era": "CE" },
+    "end": { "value": 1857, "era": "CE" }
+  },
+  {
+    "title": "Aztec Empire",
+    "description": "Mesoamerican empire in central Mexico.",
+    "eventType": "EMPIRE_DYNASTY",
+    "start": { "value": 1428, "era": "CE" },
+    "end": { "value": 1521, "era": "CE" }
+  },
+    {
+      "title": "Inca Empire",
+      "description": "Largest empire in pre-Columbian America, centered in the Andes.",
+      "eventType": "EMPIRE_DYNASTY",
+      "start": { "value": 1438, "era": "CE" },
+      "end": { "value": 1533, "era": "CE" }
+    },
+    {
+      "title": "Persian Empire (Achaemenid)",
+      "description": "First Persian Empire, founded by Cyrus the Great.",
+      "eventType": "EMPIRE_DYNASTY",
+      "start": { "value": 550, "era": "BCE" },
+      "end": { "value": 330, "era": "BCE" }
+    },
+    {
+      "title": "Han Dynasty",
+      "description": "A golden age in Chinese history marked by prosperity and cultural achievement.",
+      "eventType": "EMPIRE_DYNASTY",
+      "start": { "value": 206, "era": "BCE" },
+      "end": { "value": 220, "era": "CE" }
+    },
+    {
+      "title": "World War I",
+      "description": "Global war centered in Europe, also known as the Great War.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1914, "era": "CE" },
+      "end": { "value": 1918, "era": "CE" }
+    },
+    {
+      "title": "World War II",
+      "description": "Global war involving most of the world's nations.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1939, "era": "CE" },
+      "end": { "value": 1945, "era": "CE" }
+    },
+    {
+      "title": "Fall of the Berlin Wall",
+      "description": "Symbolic end of the Cold War and division of Germany.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1989, "era": "CE" },
+      "end": { "value": 1989, "era": "CE" }
+    },
+    {
+      "title": "Moon Landing",
+      "description": "Apollo 11 mission lands the first humans on the Moon.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1969, "era": "CE" },
+      "end": { "value": 1969, "era": "CE" }
+    },
+    {
+      "title": "French Revolution",
+      "description": "Period of radical social and political change in France.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1789, "era": "CE" },
+      "end": { "value": 1799, "era": "CE" }
+    },
+    {
+      "title": "American Revolution",
+      "description": "War of independence fought by the Thirteen Colonies against Britain.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1775, "era": "CE" },
+      "end": { "value": 1783, "era": "CE" }
+    },
+    {
+      "title": "Industrial Revolution",
+      "description": "Transition to new manufacturing processes in Europe and the US.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1760, "era": "CE" },
+      "end": { "value": 1840, "era": "CE" }
+    },
+    {
+      "title": "Renaissance",
+      "description": "Period of renewed interest in art, science, and the classical world.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1300, "era": "CE" },
+      "end": { "value": 1600, "era": "CE" }
+    },
+    {
+      "title": "Age of Exploration",
+      "description": "Era of European overseas exploration and expansion.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1400, "era": "CE" },
+      "end": { "value": 1700, "era": "CE" }
+    },
+    {
+      "title": "Cold War",
+      "description": "Period of geopolitical tension between the Soviet Union and the United States.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1947, "era": "CE" },
+      "end": { "value": 1991, "era": "CE" }
+    },
+    {
+      "title": "Printing Press Invented",
+      "description": "Johannes Gutenberg invents the movable-type printing press.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1440, "era": "CE" },
+      "end": { "value": 1440, "era": "CE" }
+    },
+    {
+      "title": "Discovery of Penicillin",
+      "description": "Alexander Fleming discovers the first true antibiotic.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1928, "era": "CE" },
+      "end": { "value": 1928, "era": "CE" }
+    },
+    {
+      "title": "Fall of Constantinople",
+      "description": "Ottoman Empire captures Constantinople, marking the end of the Byzantine Empire.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1453, "era": "CE" },
+      "end": { "value": 1453, "era": "CE" }
+    },
+    {
+      "title": "Signing of the Magna Carta",
+      "description": "Charter of rights agreed to by King John of England.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1215, "era": "CE" },
+      "end": { "value": 1215, "era": "CE" }
+    },
+    {
+      "title": "Black Death",
+      "description": "One of the most devastating pandemics in human history.",
+      "eventType": "NATURAL_DISASTER",
+      "start": { "value": 1347, "era": "CE" },
+      "end": { "value": 1351, "era": "CE" }
+    },
+    {
+      "title": "Crusades",
+      "description": "Series of religious wars sanctioned by the Latin Church.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1096, "era": "CE" },
+      "end": { "value": 1291, "era": "CE" }
+    },
+    {
+      "title": "Great Fire of London",
+      "description": "Major conflagration that swept through central London.",
+      "eventType": "NATURAL_DISASTER",
+      "start": { "value": 1666, "era": "CE" },
+      "end": { "value": 1666, "era": "CE" }
+    },
+    {
+      "title": "Great Depression",
+      "description": "Severe worldwide economic depression during the 1930s.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1929, "era": "CE" },
+      "end": { "value": 1939, "era": "CE" }
+    },
+    {
+      "title": "September 11 Attacks",
+      "description": "Coordinated terrorist attacks in the United States.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 2001, "era": "CE" },
+      "end": { "value": 2001, "era": "CE" }
+    },
+    {
+      "title": "COVID-19 Pandemic",
+      "description": "Global pandemic caused by the SARS-CoV-2 virus.",
+      "eventType": "NATURAL_DISASTER",
+      "start": { "value": 2019, "era": "CE" },
+      "end": { "value": 2023, "era": "CE" }
+    },
+    {
+      "title": "Discovery of America by Columbus",
+      "description": "Christopher Columbus reaches the Americas.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1492, "era": "CE" },
+      "end": { "value": 1492, "era": "CE" }
+    },
+    {
+      "title": "Battle of Hastings",
+      "description": "Norman conquest of England begins.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1066, "era": "CE" },
+      "end": { "value": 1066, "era": "CE" }
+    },
+    {
+      "title": "Signing of the Declaration of Independence",
+      "description": "Thirteen American colonies declare independence from Britain.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1776, "era": "CE" },
+      "end": { "value": 1776, "era": "CE" }
+    },
+    {
+      "title": "Russian Revolution",
+      "description": "Revolution leading to the rise of the Soviet Union.",
+      "eventType": "ERA_PERIOD",
+      "start": { "value": 1917, "era": "CE" },
+      "end": { "value": 1917, "era": "CE" }
+    },
+    {
+      "title": "Fall of the Western Roman Empire",
+      "description": "Collapse of the Western Roman Empire in 476 CE.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 476, "era": "CE" },
+      "end": { "value": 476, "era": "CE" }
+    },
+    {
+      "title": "First Crusade",
+      "description": "Military expedition to capture Jerusalem.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1096, "era": "CE" },
+      "end": { "value": 1099, "era": "CE" }
+    },
+    {
+      "title": "Second World War Ends in Europe",
+      "description": "Germany surrenders to Allied forces.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1945, "era": "CE" },
+      "end": { "value": 1945, "era": "CE" }
+    },
+    {
+      "title": "First Flight by the Wright Brothers",
+      "description": "Orville and Wilbur Wright achieve powered flight.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1903, "era": "CE" },
+      "end": { "value": 1903, "era": "CE" }
+    },
+    {
+      "title": "Chernobyl Disaster",
+      "description": "Nuclear accident in the Soviet Union.",
+      "eventType": "NATURAL_DISASTER",
+      "start": { "value": 1986, "era": "CE" },
+      "end": { "value": 1986, "era": "CE" }
+    },
+    {
+      "title": "Assassination of Archduke Franz Ferdinand",
+      "description": "Event that triggered World War I.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1914, "era": "CE" },
+      "end": { "value": 1914, "era": "CE" }
+    },
+    {
+      "title": "Apollo 13 Mission",
+      "description": "NASA mission that suffered a critical failure but returned safely.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1970, "era": "CE" },
+      "end": { "value": 1970, "era": "CE" }
+    },
+    {
+      "title": "Fall of Saigon",
+      "description": "End of the Vietnam War.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1975, "era": "CE" },
+      "end": { "value": 1975, "era": "CE" }
+    },
+    {
+      "title": "Partition of India",
+      "description": "Division of British India into India and Pakistan.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1947, "era": "CE" },
+      "end": { "value": 1947, "era": "CE" }
+    },
+    {
+      "title": "Nelson Mandela Released from Prison",
+      "description": "End of Mandela's 27-year imprisonment.",
+      "eventType": "FAMOUS_PERSON",
+      "start": { "value": 1990, "era": "CE" },
+      "end": { "value": 1990, "era": "CE" }
+    },
+    {
+      "title": "First Man in Space",
+      "description": "Yuri Gagarin orbits Earth.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1961, "era": "CE" },
+      "end": { "value": 1961, "era": "CE" }
+    },
+    {
+      "title": "Invention of the Telephone",
+      "description": "Alexander Graham Bell patents the telephone.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1876, "era": "CE" },
+      "end": { "value": 1876, "era": "CE" }
+    },
+    {
+      "title": "Invention of the World Wide Web",
+      "description": "Tim Berners-Lee invents the World Wide Web.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1989, "era": "CE" },
+      "end": { "value": 1989, "era": "CE" }
+    },
+    {
+      "title": "Discovery of Electricity",
+      "description": "Key experiments by Benjamin Franklin and others lead to understanding of electricity.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1752, "era": "CE" },
+      "end": { "value": 1752, "era": "CE" }
+    },
+    {
+      "title": "Battle of Waterloo",
+      "description": "Napoleon Bonaparte is defeated by the Seventh Coalition.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1815, "era": "CE" },
+      "end": { "value": 1815, "era": "CE" }
+    },
+    {
+      "title": "Louisiana Purchase",
+      "description": "United States acquires territory from France.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1803, "era": "CE" },
+      "end": { "value": 1803, "era": "CE" }
+    },
+    {
+      "title": "Berlin Conference",
+      "description": "European powers formalize the colonization of Africa.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1884, "era": "CE" },
+      "end": { "value": 1885, "era": "CE" }
+    },
+    {
+      "title": "Sinking of the Titanic",
+      "description": "RMS Titanic sinks after hitting an iceberg.",
+      "eventType": "NATURAL_DISASTER",
+      "start": { "value": 1912, "era": "CE" },
+      "end": { "value": 1912, "era": "CE" }
+    },
+    {
+      "title": "Gutenberg Bible Printed",
+      "description": "First major book printed using movable type.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1455, "era": "CE" },
+      "end": { "value": 1455, "era": "CE" }
+    },
+    {
+      "title": "Battle of Stalingrad",
+      "description": "Turning point in World War II on the Eastern Front.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1942, "era": "CE" },
+      "end": { "value": 1943, "era": "CE" }
+    },
+    {
+      "title": "Signing of the Treaty of Versailles",
+      "description": "Treaty ending World War I between Germany and the Allied Powers.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1919, "era": "CE" },
+      "end": { "value": 1919, "era": "CE" }
+    },
+    {
+      "title": "Assassination of Julius Caesar",
+      "description": "Roman dictator Julius Caesar is assassinated.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 44, "era": "BCE" },
+      "end": { "value": 44, "era": "BCE" }
+    },
+    {
+      "title": "Fall of the Bastille",
+      "description": "Storming of the Bastille prison marks the start of the French Revolution.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1789, "era": "CE" },
+      "end": { "value": 1789, "era": "CE" }
+    },
+    {
+      "title": "First Steam Locomotive",
+      "description": "George Stephenson builds the first practical steam locomotive.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1814, "era": "CE" },
+      "end": { "value": 1814, "era": "CE" }
+    },
+    {
+      "title": "End of Apartheid",
+      "description": "Formal end of apartheid laws in South Africa.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1994, "era": "CE" },
+      "end": { "value": 1994, "era": "CE" }
+    },
+    {
+      "title": "First Nuclear Bomb Detonated",
+      "description": "The Trinity test marks the first detonation of a nuclear weapon.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1945, "era": "CE" },
+      "end": { "value": 1945, "era": "CE" }
+    },
+    {
+      "title": "First Email Sent",
+      "description": "Ray Tomlinson sends the first email.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1971, "era": "CE" },
+      "end": { "value": 1971, "era": "CE" }
+    },
+    {
+      "title": "Launch of Sputnik 1",
+      "description": "First artificial Earth satellite launched by the Soviet Union.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1957, "era": "CE" },
+      "end": { "value": 1957, "era": "CE" }
+    },
+    {
+      "title": "Martin Luther King Jr.'s 'I Have a Dream' Speech",
+      "description": "Delivered during the March on Washington for Jobs and Freedom.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1963, "era": "CE" },
+      "end": { "value": 1963, "era": "CE" }
+    },
+    {
+      "title": "Women's Suffrage in the US",
+      "description": "19th Amendment grants women the right to vote.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1920, "era": "CE" },
+      "end": { "value": 1920, "era": "CE" }
+    },
+    {
+      "title": "End of the Hundred Years' War",
+      "description": "Conflict between England and France concludes.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1453, "era": "CE" },
+      "end": { "value": 1453, "era": "CE" }
+    },
+    {
+      "title": "Battle of Gettysburg",
+      "description": "Major turning point in the American Civil War.",
+      "eventType": "WAR_CONFLICT",
+      "start": { "value": 1863, "era": "CE" },
+      "end": { "value": 1863, "era": "CE" }
+    },
+    {
+      "title": "Signing of the United Nations Charter",
+      "description": "Founding document of the United Nations.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1945, "era": "CE" },
+      "end": { "value": 1945, "era": "CE" }
+    },
+    {
+      "title": "First Human Heart Transplant",
+      "description": "Dr. Christiaan Barnard performs the first successful human heart transplant.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1967, "era": "CE" },
+      "end": { "value": 1967, "era": "CE" }
+    },
+    {
+      "title": "First Powered Flight Across the Atlantic",
+      "description": "Charles Lindbergh flies solo nonstop from New York to Paris.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1927, "era": "CE" },
+      "end": { "value": 1927, "era": "CE" }
+    },
+    {
+      "title": "Fall of the Soviet Union",
+      "description": "Dissolution of the USSR into independent republics.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1991, "era": "CE" },
+      "end": { "value": 1991, "era": "CE" }
+    },
+    {
+      "title": "First Artificial Heart Implant",
+      "description": "Barney Clark receives the first permanent artificial heart.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1982, "era": "CE" },
+      "end": { "value": 1982, "era": "CE" }
+    },
+    {
+      "title": "Hubble Space Telescope Launched",
+      "description": "NASA launches the Hubble Space Telescope into orbit.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1990, "era": "CE" },
+      "end": { "value": 1990, "era": "CE" }
+    },
+    {
+      "title": "First iPhone Released",
+      "description": "Apple releases the first generation iPhone.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 2007, "era": "CE" },
+      "end": { "value": 2007, "era": "CE" }
+    },
+    {
+      "title": "First Man on the Moon",
+      "description": "Neil Armstrong becomes the first human to walk on the Moon.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1969, "era": "CE" },
+      "end": { "value": 1969, "era": "CE" }
+    },
+    {
+      "title": "Discovery of DNA Structure",
+      "description": "James Watson and Francis Crick describe the double helix structure of DNA.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1953, "era": "CE" },
+      "end": { "value": 1953, "era": "CE" }
+    },
+    {
+      "title": "First Space Shuttle Launch",
+      "description": "NASA launches Columbia, the first space shuttle.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1981, "era": "CE" },
+      "end": { "value": 1981, "era": "CE" }
+    },
+    {
+      "title": "End of World War II in Asia",
+      "description": "Japan surrenders, marking the end of World War II.",
+      "eventType": "POLITICAL_EVENT",
+      "start": { "value": 1945, "era": "CE" },
+      "end": { "value": 1945, "era": "CE" }
+    },
+    {
+      "title": "First Human in Orbit",
+      "description": "Yuri Gagarin becomes the first human to orbit Earth.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1961, "era": "CE" },
+      "end": { "value": 1961, "era": "CE" }
+    },
+    {
+      "title": "First Nobel Prizes Awarded",
+      "description": "The inaugural Nobel Prizes are awarded in Stockholm, Sweden.",
+      "eventType": "CULTURAL_EVENT",
+      "start": { "value": 1901, "era": "CE" },
+      "end": { "value": 1901, "era": "CE" }
+    },
+    {
+      "title": "First Modern Olympic Games",
+      "description": "The first modern Olympics are held in Athens, Greece.",
+      "eventType": "CULTURAL_EVENT",
+      "start": { "value": 1896, "era": "CE" },
+      "end": { "value": 1896, "era": "CE" }
+    },
+    {
+      "title": "First Photograph Taken",
+      "description": "Joseph Nicéphore Niépce captures the first permanent photograph.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1826, "era": "CE" },
+      "end": { "value": 1826, "era": "CE" }
+    },
+    {
+      "title": "First Transatlantic Telegraph Cable",
+      "description": "Telegraph communication established between Europe and North America.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1858, "era": "CE" },
+      "end": { "value": 1858, "era": "CE" }
+    },
+    {
+      "title": "First Powered Flight",
+      "description": "Wright brothers achieve the first powered, controlled flight.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1903, "era": "CE" },
+      "end": { "value": 1903, "era": "CE" }
+    },
+    {
+      "title": "First Use of the Internet",
+      "description": "ARPANET sends its first message.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1969, "era": "CE" },
+      "end": { "value": 1969, "era": "CE" }
+    },
+    {
+      "title": "First Human Cloned Embryo",
+      "description": "Scientists clone the first human embryo for research.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 2001, "era": "CE" },
+      "end": { "value": 2001, "era": "CE" }
+    },
+    {
+      "title": "First Artificial Satellite",
+      "description": "Sputnik 1 becomes the first artificial satellite in space.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 1957, "era": "CE" },
+      "end": { "value": 1957, "era": "CE" }
+    },
+    {
+      "title": "First Space Tourist",
+      "description": "Dennis Tito becomes the first paying space tourist.",
+      "eventType": "DISCOVERY_INVENTION",
+      "start": { "value": 2001, "era": "CE" },
+      "end": { "value": 2001, "era": "CE" }
+    }
+]
