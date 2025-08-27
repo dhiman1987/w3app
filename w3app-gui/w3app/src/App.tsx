@@ -22,20 +22,25 @@ export default function App() {
       return;
     }
 
-    // Clamp years to valid range
-    const clampedStart = Math.max(EARLIEST_YEAR, startYear);
-    const clampedEnd = Math.min(LATEST_YEAR, endYear);
+      // Debounce: wait 400ms after last change before fetching
+      const handler = setTimeout(() => {
+        // Clamp years to valid range
+        const clampedStart = Math.max(EARLIEST_YEAR, startYear);
+        const clampedEnd = Math.min(LATEST_YEAR, endYear);
 
-    const params = new URLSearchParams({
-      startYear: clampedStart.toString(),
-      endYear: clampedEnd.toString()
-    });
-    selectedTypes.forEach(type => params.append('types', type));
+        const params = new URLSearchParams({
+        startYear: clampedStart.toString(),
+        endYear: clampedEnd.toString()
+        });
+        selectedTypes.forEach(type => params.append('types', type));
 
-    fetch(`http://localhost:8080/api/events/range/type?${params.toString()}`)
-      .then(res => res.json())
-      .then((data: HistoricalEvent[]) => setEvents(data))
-      .catch(err => console.error(err));
+        fetch(`http://localhost:8080/api/events/range/type?${params.toString()}`)
+          .then(res => res.json())
+          .then((data: HistoricalEvent[]) => setEvents(data))
+          .catch(err => console.error(err));
+      }, 1000);
+  // Cleanup: clear timer if values change before timeout
+  return () => clearTimeout(handler);
   }, [selectedTypes,startYear,endYear]);
 
   return (
