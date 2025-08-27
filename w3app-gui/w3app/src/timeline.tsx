@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import type { HistoricalEvent } from './types';
 import { EARLIEST_YEAR, LATEST_YEAR } from './constants/appContants';
+import { eventShapeMap } from './eventShapes';
 
 // Utility: Convert year to X coordinate
 function yearToX(year: number, startYear: number, pxPerYear: number, padding: number) {
@@ -77,19 +78,18 @@ function EventDots({ events, yearToX, height, onSelectEvent }: {
 }) {
   return (
     <>
-      {events.map(ev => (
-        <circle
-          key={ev.id}
-          cx={yearToX(ev.start.value)}
-          cy={height / 2}
-          r={6}
-          fill="steelblue"
-          style={{ cursor: 'pointer' }}
-          onClick={() => onSelectEvent(ev)}
-        >
-          <title>{ev.title}</title>
-        </circle>
-      ))}
+      {events.map(ev => {
+        const Shape = eventShapeMap[ev.eventType] ?? eventShapeMap['default'];
+        return (
+          <Shape
+            key={ev.id}
+            cx={yearToX(ev.start.value)}
+            cy={height / 2}
+            title={ev.title}
+            onClick={() => onSelectEvent(ev)}
+          />
+        );
+      })}
     </>
   );
 }
