@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import type { HistoricalEvent } from './types';
-import { EARLIEST_YEAR, LATEST_YEAR } from './constants/appContants';
-import { eventShapeMap } from './eventShapes';
+import type { HistoricalEvent } from '../../types';
+import { EARLIEST_YEAR, LATEST_YEAR } from '../../constants/appContants';
+import { eventShapeMap } from '../../eventShapes';
 
 // Utility: Convert year to X coordinate
 function yearToX(year: number, startYear: number, pxPerYear: number, padding: number) {

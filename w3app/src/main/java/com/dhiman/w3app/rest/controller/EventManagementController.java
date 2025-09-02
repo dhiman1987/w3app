@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/events")
+@CrossOrigin
 public class EventManagementController {
 
     private final EventManagementService eventManagementService;
