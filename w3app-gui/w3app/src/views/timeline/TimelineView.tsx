@@ -3,6 +3,7 @@ import type { HistoricalEvent } from '../../types';
 import Timeline from './Timeline';
 import { EventType, EVENT_TYPE_LABELS } from '../../constants/eventTypes';
 import { EARLIEST_YEAR, LATEST_YEAR } from '../../constants/appContants';
+import ManageEventsView from '../manageEvents/ManageEvents';
 
 function fetchEvents(selectedTypes: EventType[], startYear: number, endYear: number, setEvents: (evs: HistoricalEvent[]) => void) {
   if (selectedTypes.length === 0) {
@@ -30,7 +31,6 @@ function FilterPanel({ selectedTypes, setSelectedTypes }: {
 }) {
   return (
     <aside className="filters-panel">
-      <h2>Filters</h2>
       <div className="filter-list">
         {EVENT_TYPE_LABELS.map(({ key, label }) => (
           <label key={key} className="filter-item">
@@ -54,6 +54,7 @@ function FilterPanel({ selectedTypes, setSelectedTypes }: {
 }
 
 function InfoPanel({ selectedEvent }: { selectedEvent: HistoricalEvent | null }) {
+  const [activeView, setActiveView] = useState<'create-event' | 'edit-event'|''>('');
   return (
     <aside className="info-panel">
       <h2>Info</h2>
@@ -62,10 +63,14 @@ function InfoPanel({ selectedEvent }: { selectedEvent: HistoricalEvent | null })
           <h3>{selectedEvent.title}</h3>
           <p>{selectedEvent.description}</p>
           <p><strong>{selectedEvent.start.display}</strong> – <strong>{selectedEvent.end.display}</strong></p>
+          <button onClick={() => setActiveView(prev => prev === 'edit-event' ? '' : 'edit-event')}>Update Event</button> &nbsp;
         </>
       ) : (
         <p>Select an event to see details</p>
       )}
+      <button onClick={() => setActiveView(prev => prev === 'create-event' ? '' : 'create-event')}>Create Event</button>
+      {activeView === 'create-event' && <ManageEventsView historicalEvent={null} />}
+      {activeView === 'edit-event' && <ManageEventsView historicalEvent={selectedEvent} />}
     </aside>
   );
 }
@@ -76,7 +81,6 @@ export default function TimelineView() {
   const [events, setEvents] = useState<HistoricalEvent[]>([]);
   const [selectedEvent, setSelectedEvent] = useState<HistoricalEvent | null>(null);
   const [selectedTypes, setSelectedTypes] = useState<EventType[]>([EventType.WAR_CONFLICT]);
-
   // These will be updated by Timeline when the user scrolls/zooms
   const [startYear, setStartYear] = useState(1900);
   const [endYear, setEndYear] = useState(2000);

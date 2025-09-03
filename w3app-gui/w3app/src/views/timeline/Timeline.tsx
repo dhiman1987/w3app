@@ -109,7 +109,7 @@ const Timeline: React.FC<TimelineProps> = ({
   onSelectEvent,
   onRangeChange
 }) => {
-  const width = 800;
+  const width = 1200;
   const height = 200;
   const padding = 50;
 
@@ -137,8 +137,6 @@ const Timeline: React.FC<TimelineProps> = ({
   const zoom = (factor: number) => {
     const mid = (startYear + endYear) / 2;
     const newRange = yearsVisible * factor;
-    //setStartYear(mid - newRange / 2);
-    //setEndYear(mid + newRange / 2);
     updateRange(mid - newRange / 2, mid + newRange / 2);
   };
 
@@ -152,8 +150,6 @@ const Timeline: React.FC<TimelineProps> = ({
     if (dragStartX !== null && dragStartYear !== null) {
       const dx = e.clientX - dragStartX;
       const yearDelta = dx / pxPerYear;
-      //setStartYear(dragStartYear - yearDelta);
-      //setEndYear(dragStartYear - yearDelta + yearsVisible);
       updateRange(dragStartYear - yearDelta, dragStartYear - yearDelta + yearsVisible);
     }
   };

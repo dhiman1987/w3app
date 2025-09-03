@@ -7,14 +7,20 @@ import "./ManageEvents.css";
 
 const ERA_OPTIONS = ["MYA", "BCE", "CE"];
 
-const CreateHistoricalEventForm: React.FC = () => {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [eventType, setEventType] = useState<EventType>("ERA_PERIOD");
-  const [startValue, setStartValue] = useState<number>(541);
-  const [startEra, setStartEra] = useState("MYA");
-  const [endValue, setEndValue] = useState<number>(485);
-  const [endEra, setEndEra] = useState("MYA");
+
+interface CreateHistoricalEventFormProps {
+  historicalEvent: HistoricalEvent | null;
+}
+
+const CreateHistoricalEventForm: React.FC<CreateHistoricalEventFormProps> = ({ historicalEvent }) => {
+  const [id, setId] = useState(historicalEvent?.id ?? null)
+  const [title, setTitle] = useState(historicalEvent?.title ?? "");
+  const [description, setDescription] = useState(historicalEvent?.description ?? "");
+  const [eventType, setEventType] = useState<EventType>(historicalEvent?.eventType ?? "ERA_PERIOD");
+  const [startValue, setStartValue] = useState<number>(historicalEvent?.start.value ?? 0);
+  const [startEra, setStartEra] = useState(historicalEvent?.start.era ?? "CE");
+  const [endValue, setEndValue] = useState<number>(historicalEvent?.end.value ?? 0);
+  const [endEra, setEndEra] = useState(historicalEvent?.end.era ?? "CE");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,15 +49,23 @@ const CreateHistoricalEventForm: React.FC = () => {
       tags: []
     };
 
+    let method = "POST";
+    let operation = "create";
+    if(id){
+        newEvent.id = id;
+        method= "PUT";
+        operation = "update";
+    }
+      
     try {
       const response = await fetch("http://localhost:8080/api/events", {
-        method: "POST",
+        method: method,
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newEvent)
       });
 
-      if (!response.ok) throw new Error("Failed to create event");
-      alert("Event created successfully!");
+      if (!response.ok) throw new Error("Failed to "+operation+" event");
+      alert("Event "+operation+" successfully done!");
     } catch (error) {
       console.error(error);
       alert("Error creating event");
@@ -60,8 +74,7 @@ const CreateHistoricalEventForm: React.FC = () => {
 
   return (
   <form onSubmit={handleSubmit} className="form-container">
-      <h2 className="form-title">Create Historical Event</h2>
-
+      <h2 className="form-title">{historicalEvent ? "Edit Event" : "Create Event"}</h2>
       <div className="form-grid">
         <div className="form-group">
           <label>Title:</label>
@@ -136,17 +149,17 @@ const CreateHistoricalEventForm: React.FC = () => {
         </div>
 
         <button type="submit" className="submit-button">
-          Create Event
+          {historicalEvent ? "Update Event" : "Create Event"}
         </button>
       </div>
     </form>
   );
 };
 
-export default function ManageEventsView() {
-return (
+export default function ManageEventsView({ historicalEvent: HistoricalEvent }) {
+  return (
     <div className="">
-        <CreateHistoricalEventForm></CreateHistoricalEventForm>
+      <CreateHistoricalEventForm historicalEvent={HistoricalEvent} />
     </div>
   );
 }

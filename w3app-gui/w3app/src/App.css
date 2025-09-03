@@ -1,6 +1,6 @@
 .app-container {
   display: grid;
-  grid-template-columns: 200px 1fr 300px;
+  grid-template-rows: 1fr 4fr 4fr;
   height: 100vh;
   font-family: sans-serif;
 }
@@ -25,7 +25,7 @@
 
 .filter-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
 }
 
