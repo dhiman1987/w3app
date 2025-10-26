@@ -83,6 +83,7 @@ function EventDots({ events, yearToX, height, onSelectEvent }: {
         return (
           <Shape
             key={ev.id}
+            id={ev.id}
             cx={yearToX(ev.start.value)}
             cy={height / 2}
             title={ev.title}

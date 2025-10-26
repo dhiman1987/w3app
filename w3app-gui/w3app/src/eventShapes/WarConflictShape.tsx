@@ -1,9 +1,8 @@
 import React from 'react';
 import type { ShapeProps } from './ShapeProps';
 
-const WarConflictShape: React.FC<ShapeProps> = ({ key, cx, cy, title, onClick }) => (
+const WarConflictShape: React.FC<ShapeProps> = ({ id, cx, cy, title, onClick }) => (
   <rect
-    key={key}
     x={cx - 7}
     y={cy - 7}
     width={14}
@@ -13,7 +12,7 @@ const WarConflictShape: React.FC<ShapeProps> = ({ key, cx, cy, title, onClick })
     style={{ cursor: 'pointer' }}
     onClick={onClick}
   >
-    <title>{title}</title>
+    <title>{title}-{id}</title>
   </rect>
 );
 

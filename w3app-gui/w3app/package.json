@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-local": "vite --mode localapi",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "miragejs": "^0.1.48",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },

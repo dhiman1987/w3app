@@ -1,6 +1,6 @@
 .app-container {
   display: grid;
-  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-rows: 1fr 6fr 2fr;
   height: 100vh;
   font-family: sans-serif;
 }
@@ -14,13 +14,12 @@
 .timeline-panel {
   background: #fff;
   padding: 1rem;
-  overflow: auto;
+  text-align: center;
 }
 
 .info-panel {
   background: #f9f9f9;
   padding: 1rem;
-  border-left: 1px solid #ccc;
 }
 
 .filter-list {

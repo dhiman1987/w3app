@@ -5,6 +5,11 @@ import { EventType, EVENT_TYPE_LABELS } from '../../constants/eventTypes';
 import { EARLIEST_YEAR, LATEST_YEAR } from '../../constants/appContants';
 import ManageEventsView from '../manageEvents/ManageEvents';
 
+let base_url = "http://localhost:8080"
+if (import.meta.env.MODE === 'development') {
+  base_url = ""
+}
+
 function fetchEvents(selectedTypes: EventType[], startYear: number, endYear: number, setEvents: (evs: HistoricalEvent[]) => void) {
   if (selectedTypes.length === 0) {
     setEvents([]);
@@ -19,7 +24,7 @@ function fetchEvents(selectedTypes: EventType[], startYear: number, endYear: num
   });
   selectedTypes.forEach(type => params.append('types', type));
 
-  fetch(`http://localhost:8080/api/events/range/type?${params.toString()}`)
+  fetch(`${base_url}/api/events/range/type?${params.toString()}`)
     .then(res => res.json())
     .then((data: HistoricalEvent[]) => setEvents(data))
     .catch(err => console.error(err));

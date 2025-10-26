@@ -1,5 +1,5 @@
 export interface ShapeProps {
-  key: string | number;
+  id: string | number;
   cx: number;
   cy: number;
   title: string;
